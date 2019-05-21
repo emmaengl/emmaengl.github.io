@@ -13,6 +13,15 @@
 */
 
 /* * * * * GLOBAL STYLES (MOBILE FIRST) * * * * */
+.section {
+  padding: 7% 15%;
+}
+
+.color-section {
+  background-color: #00958d;
+  color: #ffffff;
+}
+
 .fill {
   height: 100vh;
 }
@@ -23,10 +32,6 @@
 
 .fill-20 {
   min-height: 19vh;
-}
-
-.section {
-  padding: 5% 0;
 }
 
 .top-bar {
@@ -50,14 +55,6 @@
   opacity: 1;
 }
 
-.section {
-  padding: 7% 15%;
-}
-
-.color-section {
-  background-color: #00958d;
-  color: #ffffff;
-}
 /* * * * * TYPOGRAPHY * * * * */
 html, body {
   font-size: 16px;
@@ -80,63 +77,45 @@ hr {
 /* Headings */
 h1, h3 {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.1rem;
 }
 
 h2, h4, h5, h6 {
   font-family: "Source Code Pro", Courier, monospace;
-  line-height: 130%;
-}
-
-h1 {
-
-  font-size: 3rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-h2 {
-  font-family: "Source Code Pro", Helvetica, Arial, sans-serif;
   font-weight: 400;
-}
-
-h3 {
-  font-family: Montserrat, Helvetica, Arial, sans-serif;
-  font-size: 2.1rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-h4, h5, .intro {
-
-}
-
-h6, .skills {
-  font-family: "Source Code Pro", Courier, monospace;
-  font-size: 0.8rem;
-  color: #B2B9BA;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  line-height: 135%;
 }
 
 .xl-heading {
   font-size: 3.6rem;
 }
 
-.color-heading {
-  color: #3CC6BD;
+.xs-heading {
+  font-size: 0.8rem;
+  color: #B2B9BA;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.intro {
-  font-size: 1.25rem;
+.color-heading {
+  color: #3CC6BD;
 }
 
 .divider {
   border-top: 2px solid #f75940;
   width: 25%;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /* Navigation & Links */
@@ -197,7 +176,39 @@ a:hover {
   background-color: #F2EFEA;
 }
 
+/* #about {
+  text-align: center;
+} */
+
+/* Testimonials */
+#testimonials {
+  text-align: center;
+  padding: 7% 0;
+}
+
+#testimonials .carousel-inner {
+  padding: 0 15%;
+}
+
+#testimonials h5 {
+    margin-bottom: 30px;
+}
+
+#testimonials a {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.testimonial-quote {
+  display: block;
+  font-size: 4rem;
+  opacity: 0.4;
+}
+
 /* Timeline */
+#experience {
+  margin: 7% 0;
+}
 .timeline {
   margin-top: 30px;
   list-style: none;
@@ -409,8 +420,8 @@ Small devices (landscape phones, 576px and up) */
   }
 }
 
-/* @media (min-width: 1200px) {
+@media (min-width: 1200px) {
 .container {
-  max-width: 750px;
+  max-width: 900px;
 }
-} */
+}
