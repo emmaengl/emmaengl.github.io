@@ -6,7 +6,7 @@ window.onload = function(){
 };
 
 $(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
+    $('a[href^="#"].nav-link').on('click',function (e) {
         e.preventDefault();
 
         var target = this.hash;
