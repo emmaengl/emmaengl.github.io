@@ -354,14 +354,24 @@ a:hover {
 }
 
 /* Portfolio */
+.portfolio-section {
+  padding: 7% 0;
+}
+
+#portfolio .row {
+  flex-flow: column wrap;
+  max-height: 600px;
+}
+
 #portfolio img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .portfolio-img {
   background-color: #3CC6BD;
   position: relative;
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .portfolio-img a {
