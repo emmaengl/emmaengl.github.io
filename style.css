@@ -12,6 +12,10 @@
 - MEDIA BREAKPOINTS
 */
 /* * * * * GLOBAL STYLES (MOBILE FIRST) * * * * */
+.container {
+  max-width: 900px;
+}
+
 .section {
   padding: 7% 15%;
 }
@@ -166,6 +170,10 @@ a:hover {
 }
 
 /* * * * * ICONS & IMAGES * * * * */
+.img-full-width {
+  width: 100%;
+}
+
 .ee-logo {
   width: 150px;
   height: 150px;
@@ -368,7 +376,7 @@ a:hover {
   background-color: #3CC6BD;
   position: relative;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin: 10px;
 }
 
 .portfolio-img a {
@@ -396,13 +404,30 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+
 /* * * * * MEDIA BREAKPOINTS * * * * */
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+ }
+
 @media (max-width: 768px) {
   html, body {
     font-size: 14px;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
   }
 
   ul.timeline:before {
@@ -437,11 +462,5 @@ Small devices (landscape phones, 576px and up) */
     border-right-width: 14px;
     left: -14px;
     right: auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 900px;
   }
 }

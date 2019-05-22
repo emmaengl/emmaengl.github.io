@@ -1,11 +1,12 @@
-window.onload = function(){
-
-  document.querySelector(".fade-in").classList.add("load");
-
-
-};
+// window.onload = function(){
+//
+//   document.querySelector(".fade-in").classList.add("load");
+//
+//
+// };
 
 $(document).ready(function(){
+    $('.fade-in').addClass('load');
     $('a[href^="#"].nav-link').on('click',function (e) {
         e.preventDefault();
 
@@ -18,4 +19,12 @@ $(document).ready(function(){
             window.location.hash = target;
         });
     });
+});
+
+
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  percentPosition: true
 });
