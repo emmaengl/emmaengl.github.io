@@ -358,10 +358,7 @@ a:hover {
   padding: 7% 0;
 }
 
-#portfolio .row {
-  flex-flow: column wrap;
-  max-height: 600px;
-}
+
 
 #portfolio img {
   width: 100%;
