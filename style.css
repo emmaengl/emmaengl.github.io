@@ -21,7 +21,7 @@
 
 /* Containers & Sections */
 .section {
-  padding: 8% 15%;
+  padding: 17% 7%;
 }
 
 .header-section {
@@ -36,7 +36,6 @@
   background-color: #00958d;
   color: #ffffff;
 }
-
 
 /* Screen Fills and Top Bar */
 .fill {
@@ -78,10 +77,8 @@
 
 /* Body Text */
 html, body {
-  font-size: 16px;
+  font-size: 15px;
 }
-
-
 
 body {
   color: #242B33;
@@ -232,8 +229,12 @@ h2, h4, h5, h6 {
   opacity: 0.4;
 }
 
+.carousel-inner {
+  padding: 0 10%;
+}
 .carousel-control-next, .carousel-control-prev {
   width: 3%;
+  margin: 0 10px 0;
 }
 
 /* Timeline */
@@ -388,13 +389,21 @@ h2, h4, h5, h6 {
   margin: 10px;
 }
 
+.portfolio-img img {
+  opacity: 0.03;
+}
+
+.portfolio-img:hover img {
+  opacity: 0;
+}
+
 .portfolio-img a {
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.portfolio-img:hover img {
-  opacity: 0;
+.portfolio-img h2 {
+  display: initial;
 }
 
 .portfolio-img h2 {
@@ -425,7 +434,7 @@ h2, h4, h5, h6 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   html, body {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .xl-heading {
@@ -433,12 +442,20 @@ h2, h4, h5, h6 {
   }
 
   .section {
-    padding: 17% 7%;
+    padding: 13% 10%;
   }
 
   .ee-logo {
     width: 150px;
     height: 150px;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 3%;
+  }
+
+  .carousel-inner {
+    padding: 0;
   }
 
   .grid-sizer,
@@ -447,20 +464,26 @@ h2, h4, h5, h6 {
   }
 }
 
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  html, body {
+    font-size: 16px;
+  }
 
   .section {
-    padding: 13% 10%;
+      padding: 10% 10%;
   }
 
-  .portfolio-img h2 {
-    display: initial;
+  .carousel-inner {
+    padding: 0 10%;
   }
 
-  .portfolio-img img {
-    opacity: 0.03;
-  }
+
 
   .grid-sizer,
   .grid-item {
@@ -471,16 +494,28 @@ h2, h4, h5, h6 {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  html, body {
-    font-size: 17px;
-  }
+.container {
+  max-width: 900px;
+}
 
-  .section {
-    padding: 10% 10%;
-  }
+html, body {
+  font-size: 17px;
+}
 
   #about {
     text-align: left;
+  }
+
+  .carousel-inner {
+    padding: 0 80px;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 7%;
+  }
+
+  .portfolio-img img {
+    opacity: 1;
   }
 
   .grid-sizer,
@@ -518,34 +553,13 @@ h2, h4, h5, h6 {
 }
 
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  html, body {
-    font-size: 16px;
-  }
-
-  .section {
-    padding: 13% 10%;
-  }
-
-  .portfolio-img h2 {
-    display: initial;
-  }
-
-  .portfolio-img img {
-    opacity: 0.03;
-  }
-
-  .grid-sizer,
-  .grid-item {
-    width: 50%;
-  }
-}
-
-
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .section {
-    padding: 8% 10%;
+    padding: 8% 15%;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    width: 20%;
   }
 }
