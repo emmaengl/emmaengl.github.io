@@ -11,10 +11,17 @@
   - Portfolio
 - MEDIA BREAKPOINTS
 */
-
 /* * * * * GLOBAL STYLES (MOBILE FIRST) * * * * */
 .section {
   padding: 7% 15%;
+}
+
+.header-section {
+  background-color: #F2EFEA;
+}
+
+.footer-section {
+  padding: 7% 15% 2%;
 }
 
 .color-section {
@@ -69,9 +76,9 @@ body {
 hr {
   border-style: none;
   height: 2px;
-  background-color: #3CC6BD;
-  width: 25%;
-  margin: 80px auto;
+  background-color: #f75940;
+  width: 50%;
+  margin: 30px auto;
 }
 
 /* Headings */
@@ -164,22 +171,32 @@ a:hover {
   height: 150px;
 }
 
-.social-icons .fab {
-  color: #3CC6BD;
+.social-icons .fab,
+.social-icons .fas {
+  color: #f75940;
   padding: 10px;
   border-radius: 50%;
-  border: 2px solid #3CC6BD;
+  border: 2px solid #f75940;
+  margin: 1rem 0.5rem 2rem;
+}
+
+.social-icons a, #testimonials a {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.social-icons a:hover .fab,
+.social-icons a:hover .fas {
+  color: #ff8c6c;
+  border: 2px solid #ff8c6c;
+}
+
+/* Make LinkedIn logo same proportions as other icons */
+.fa-linkedin-in:before {
+  padding: 0 1px;
 }
 
 /* * * * * HOMEPAGE * * * * */
-.header-section {
-  background-color: #F2EFEA;
-}
-
-/* #about {
-  text-align: center;
-} */
-
 /* Testimonials */
 #testimonials {
   text-align: center;
@@ -191,12 +208,7 @@ a:hover {
 }
 
 #testimonials h5 {
-    margin-bottom: 30px;
-}
-
-#testimonials a {
-  padding-bottom: 0;
-  border-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .testimonial-quote {
@@ -209,6 +221,7 @@ a:hover {
 #experience {
   margin: 7% 0;
 }
+
 .timeline {
   margin-top: 30px;
   list-style: none;
@@ -372,8 +385,8 @@ a:hover {
 .portfolio-img h2 {
   position: absolute;
   left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* * * * * MEDIA BREAKPOINTS * * * * */
@@ -421,7 +434,7 @@ Small devices (landscape phones, 576px and up) */
 }
 
 @media (min-width: 1200px) {
-.container {
-  max-width: 900px;
-}
+  .container {
+    max-width: 900px;
+  }
 }
