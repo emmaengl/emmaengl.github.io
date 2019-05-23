@@ -1,4 +1,6 @@
-/* * * * * TABLE OF CONTENTS * * * * */
+/* * * * * * * * * * * * * * * * * * * */
+/* * * * * TABLE OF CONTENTS * * * * * */
+/* * * * * * * * * * * * * * * * * * * */
 /*
 - GLOBAL STYLES (MOBILE FIRST)
   - Fade In Elements
@@ -16,8 +18,9 @@
 - MEDIA BREAKPOINTS
 */
 
-
+/* * * * * * * * * * * * * * * * * * * * * * * * */
 /* * * * * GLOBAL STYLES (MOBILE FIRST) * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * */
 
 /* Containers & Sections */
 .section {
@@ -29,11 +32,22 @@
 }
 
 .footer-section {
-  padding: 7% 15% 2%;
+  padding: 7% 15% 1px;
+  background-color: #F2EFEA;
+}
+
+.footer-section .xs-heading,
+.footer-section a {
+  color: #848889;
 }
 
 .color-section {
   background-color: #3cc6bd;
+}
+
+.ee-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Screen Fills and Top Bar */
@@ -71,8 +85,9 @@
   opacity: 1;
 }
 
-
+/* * * * * * * * * * * * * * * */
 /* * * * * TYPOGRAPHY * * * * */
+/* * * * * * * * * * * * * * * */
 
 /* Body Text */
 html, body {
@@ -98,10 +113,16 @@ a:hover {
 
 hr {
   border-style: none;
-  height: 2px;
+  height: 1px;
+  background-color: #B2B9BA;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.divider {
+  height: 3px;
+  width: 25%;
   background-color: #f75940;
-  width: 50%;
-  margin: 30px auto;
 }
 
 
@@ -144,6 +165,14 @@ h2, h4, h5, h6 {
 
 
 /* Navigation */
+.navbar {
+  padding: 0px;
+}
+
+.navbar-nav :last-child {
+  margin-right: 0px;
+
+}
 .navbar-light .navbar-nav .nav-link {
   color: #242B33;
   font-family: "Source Code Pro", Courier, monospace;
@@ -172,7 +201,10 @@ h2, h4, h5, h6 {
   max-height: 70px;
 }
 
+/* * * * * * * * * * * * * * * * * */
 /* * * * * ICONS & IMAGES * * * * */
+/* * * * * * * * * * * * * * * * * */
+
 .img-full-width {
   width: 100%;
 }
@@ -182,13 +214,16 @@ h2, h4, h5, h6 {
   height: 120px;
 }
 
+.social-icons {
+  margin-bottom: 10%;
+}
 .social-icons .fab,
 .social-icons .fas {
-  color: #f75940;
+  color: #3cc6bd;
   padding: 10px;
   border-radius: 50%;
-  border: 2px solid #f75940;
-  margin: 1rem 0.5rem 2rem;
+  border: 2px solid #3cc6bd;
+  margin: 0 0.5rem;
 }
 
 .social-icons a, #testimonials a {
@@ -198,8 +233,8 @@ h2, h4, h5, h6 {
 
 .social-icons a:hover .fab,
 .social-icons a:hover .fas {
-  color: #ff8c6c;
-  border: 2px solid #ff8c6c;
+  color: #F75940;
+  border: 2px solid #F75940;
 }
 
 /* Make LinkedIn logo same proportions as other icons */
@@ -207,7 +242,11 @@ h2, h4, h5, h6 {
   padding: 0 1px;
 }
 
+/* * * * * * * * * * * * * * */
 /* * * * * HOMEPAGE * * * * */
+/* * * * * * * * * * * * * * */
+
+/* About */
 #about {
   text-align: center;
 }
@@ -225,7 +264,7 @@ h2, h4, h5, h6 {
 .testimonial-quote {
   display: block;
   font-size: 4rem;
-  color: #00958d;
+  color: #242B33;
 }
 
 .carousel-inner {
@@ -246,14 +285,102 @@ h2, h4, h5, h6 {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2300958d' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-/* Timeline */
+
+/* PORTFOLIO */
+.portfolio-section {
+  padding: 7% 0;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+.portfolio-img {
+  background-color: #3CC6BD;
+  position: relative;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+.portfolio-img img {
+  opacity: 0.03;
+}
+
+.portfolio-img:hover img {
+  opacity: 0;
+}
+
+.portfolio-img a {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.portfolio-img h2 {
+  text-align: center;
+}
+
+.portfolio-img:hover h2 {
+  display: block;
+}
+
+.portfolio-img h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid-sizer,
+.grid-item {
+  width: 100%;
+}
+
+
+/* SKILLS */
+.progress {
+  margin-bottom: 10px;
+  background-color: #F2EFEA;
+}
+
+.progress-bar {
+  text-align: left;
+  background-color: #F75940;
+}
+
+.progress-95 {
+  width: 95%;
+}
+
+.progress-90 {
+  width: 90%;
+}
+
+.progress-75 {
+  width: 75%;
+}
+
+.progress-65 {
+  width: 65%;
+}
+
+.progress-45 {
+  width: 45%;
+}
+
+.skill-label {
+  padding-left: 10px;
+  font-family: "Source Code Pro", Courier, monospace;
+  color: #FFFFFF;
+}
+
+
+/* EXPERIENCE */
 #experience {
   margin: 7% 0;
 }
 
-/* CURRENT DESKTOP STYLING */
-#experience {
-  margin: 7% 0;
+#experience .ee-container {
+  padding: 0 10px;
 }
 
 .timeline {
@@ -382,59 +509,7 @@ h2, h4, h5, h6 {
   margin-top: 5px;
 }
 
-/* Portfolio */
-.portfolio-section {
-  padding: 7% 0;
-}
 
-#portfolio img {
-  width: 100%;
-}
-
-.portfolio-img {
-  background-color: #3CC6BD;
-  position: relative;
-  color: #FFFFFF;
-  margin: 10px;
-}
-
-.portfolio-img img {
-  opacity: 0.03;
-}
-
-.portfolio-img:hover img {
-  opacity: 0;
-}
-
-.portfolio-img a {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.portfolio-img h2 {
-  display: initial;
-}
-
-.portfolio-img h2 {
-  text-align: center;
-  display: none;
-}
-
-.portfolio-img:hover h2 {
-  display: block;
-}
-
-.portfolio-img h2 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.grid-sizer,
-.grid-item {
-  width: 25%;
-}
 
 /* * * * * * * * * * * * * * * * * * */
 /* * * * * MEDIA BREAKPOINTS * * * * */
@@ -469,7 +544,7 @@ h2, h4, h5, h6 {
 
   .grid-sizer,
   .grid-item {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -492,11 +567,9 @@ h2, h4, h5, h6 {
     padding: 0 10%;
   }
 
-
-
   .grid-sizer,
   .grid-item {
-    width: 50%;
+    width: 33.3333333333333333%;
   }
 }
 
@@ -511,6 +584,9 @@ html, body {
   font-size: 17px;
 }
 
+.navbar-expand-lg .navbar-nav :last-child {
+  padding-right: 0;
+}
   #about {
     text-align: left;
   }
@@ -527,9 +603,13 @@ html, body {
     opacity: 1;
   }
 
+  .portfolio-img h2 {
+    display: none;
+  }
+
   .grid-sizer,
   .grid-item {
-    width: 33.3333333333333333%;
+    width: 25%;
   }
 
   .timeline:before {

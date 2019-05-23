@@ -7,7 +7,7 @@
 
 $(document).ready(function(){
     $('.fade-in').addClass('load');
-    $('a[href^="#"].nav-link').on('click',function (e) {
+    $('a[href^="#"].scroll').on('click',function (e) {
         e.preventDefault();
 
         var target = this.hash;
