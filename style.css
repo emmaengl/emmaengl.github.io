@@ -25,12 +25,14 @@
 - 05. PROJECT PAGES
 
 - 06. MEDIA BREAKPOINTS
+  - 6a Small devices (landscape phones, 576px and up)
+  - 6b Medium devices (tablets, 768px and up)
+  - 6c Large devices (desktops, 992px and up)
+  - 6d Extra large devices (large desktops, 1200px and up)
 */
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* * * * * 01. GLOBAL STYLES (MOBILE FIRST) * * * * */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 /* 1a CONTAINERS & SECTIONS */
 .footer-section {
   padding: 7% 15% 1px;
@@ -46,7 +48,6 @@
 .skills-section {
   background-color: #3cc6bd;
 }
-
 
 /* 1b SCREEN FILLS & TOP BAR */
 .fill {
@@ -67,7 +68,6 @@
   background-color: #3CC6BD;
 }
 
-
 /* 1c FADE-IN ELEMENTS */
 .fade-in {
   opacity: 0;
@@ -86,7 +86,6 @@
 /* * * * * * * * * * * * * * * * * */
 /* * * * * 02. TYPOGRAPHY * * * * */
 /* * * * * * * * * * * * * * * * * */
-
 /* 2a BODY TEXT */
 html, body {
   font-size: 15px;
@@ -98,7 +97,9 @@ body {
   font-weight: 400;
 }
 
-p {margin: 1rem 0;}
+p {
+  margin: 1rem 0;
+}
 
 a {
   color: #242B33;
@@ -125,7 +126,6 @@ hr {
   background-color: #f75940;
   margin: 2rem 0;
 }
-
 
 /* 2b HEADINGS */
 h1, h3 {
@@ -164,16 +164,25 @@ h2, h4, h5, h6 {
   color: #3CC6BD;
 }
 
-
 /* 2c NAVIGATION */
 .navbar {
   padding: 0px;
+  text-align: right;
+  color: #B2B9BA;
 }
 
-.navbar-nav :last-child {
-  margin-right: 0px;
-
+.navbar-collapse {
+  border-right: 1px solid #B2B9BA;
 }
+
+.home-page .navbar {
+  text-align: center;
+}
+
+.home-page .navbar-collapse {
+  border-right: 0;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #242B33;
   font-family: "Source Code Pro", Courier, monospace;
@@ -184,14 +193,13 @@ h2, h4, h5, h6 {
   border-bottom: none;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: #242B33;
-  border-bottom: 1px solid #3CC6BD;
-}
-
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #242B33;
-  border-bottom: 1px solid #3CC6BD;
+  color: #3CC6BD;
+  border-bottom: 0;
 }
 
 .navbar-brand {
@@ -202,10 +210,14 @@ h2, h4, h5, h6 {
   max-height: 70px;
 }
 
+.navbar-light .navbar-toggler {
+  color: #B2B9BA;
+  border-color: #B2B9BA;
+}
+
 /* * * * * * * * * * * * * * * * * * * */
 /* * * * * 03. ICONS & IMAGES * * * * */
 /* * * * * * * * * * * * * * * * * * * */
-
 .img-full-width {
   width: 100%;
 }
@@ -220,8 +232,9 @@ h2, h4, h5, h6 {
 }
 
 .social-icons {
-  margin-bottom: 10%;
+  margin: 1rem 0 6rem;
 }
+
 .social-icons .fab,
 .social-icons .fas {
   color: #3cc6bd;
@@ -250,7 +263,6 @@ h2, h4, h5, h6 {
 /* * * * * * * * * * * * * * * * */
 /* * * * * 04. HOMEPAGE * * * * */
 /* * * * * * * * * * * * * * * * */
-
 /* 4a TITLE */
 .title-section {
   background-color: #F2EFEA;
@@ -269,13 +281,12 @@ h2, h4, h5, h6 {
 }
 
 .carousel-inner {
-  padding: 0 10%;
+  padding: 0 3rem;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
   width: initial;
-
 }
 
 .carousel-control-prev-icon {
@@ -286,11 +297,11 @@ h2, h4, h5, h6 {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%2300958d' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
 }
 
-
 /* 4d PORTFOLIO */
 .grid {
-  margin 0 -10px;
+  margin: -10px;
 }
+
 .portfolio-img {
   background-color: #3CC6BD;
   position: relative;
@@ -332,7 +343,6 @@ h2, h4, h5, h6 {
   width: 100%;
 }
 
-
 /* 4e SKILLS */
 .progress {
   margin-bottom: 10px;
@@ -370,10 +380,8 @@ h2, h4, h5, h6 {
   color: #FFFFFF;
 }
 
-
 /* 4f EXPERIENCE */
 .timeline {
-  margin-top: 30px;
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
@@ -411,7 +419,6 @@ h2, h4, h5, h6 {
   width: -moz-calc(100% - 90px);
   width: -webkit-calc(100% - 90px);
   float: right;
-
   border: 1px solid #F2EFEA;
   border-radius: 2px;
   padding: 20px;
@@ -498,7 +505,6 @@ h2, h4, h5, h6 {
   margin-top: 5px;
 }
 
-
 /* * * * * * * * * * * * * * * * * * */
 /* * * * * 05. PROJECT PAGES * * * * */
 /* * * * * * * * * * * * * * * * * * */
@@ -509,8 +515,7 @@ h2, h4, h5, h6 {
 /* * * * * * * * * * * * * * * * * * * * */
 /* * * * * 06. MEDIA BREAKPOINTS * * * * */
 /* * * * * * * * * * * * * * * * * * * * */
-
-/* Small devices (landscape phones, 576px and up) */
+/* 6a Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   html, body {
     font-size: 16px;
@@ -520,19 +525,13 @@ h2, h4, h5, h6 {
     font-size: 3.6rem;
   }
 
-  .section {
-    padding: 13% 10%;
-  }
-
   .ee-logo {
     width: 150px;
     height: 150px;
   }
 
-
-
   .carousel-inner {
-    padding: 0;
+    padding: 0 4rem;
   }
 
   .grid-sizer,
@@ -541,25 +540,32 @@ h2, h4, h5, h6 {
   }
 }
 
-
-/* Medium devices (tablets, 768px and up) */
+/* 6b Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-
   html, body {
     font-size: 16px;
   }
 
-  .section {
-      padding: 10% 10%;
+  .container {
+    max-width: 100%;
   }
 
-  .about-section {
-    text-align: left;
+  .navbar-light .navbar-nav .active>.nav-link,
+  .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+  .navbar-light .navbar-nav .show>.nav-link,
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #242B33;
+    border-bottom: 1px solid #3CC6BD;
   }
 
-  .carousel-inner {
-    padding: 0 10%;
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-collapse {
+    border-right: 0;
   }
 
   .portfolio-img {
@@ -576,33 +582,27 @@ h2, h4, h5, h6 {
 
   .grid-sizer,
   .grid-item {
-    width: 50%;
-  }
-}
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-html, body {
-  font-size: 17px;
-}
-
-.container {
-  max-width: 100%;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-  .carousel-inner {
-    padding: 0 80px;
-  }
-
-  .grid-sizer,
-  .grid-item {
     width: 33.3333333333333333%;
+  }
+}
+
+/* 6c Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html, body {
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-section {
+    text-align: left;
   }
 
   .timeline:before {
@@ -638,8 +638,7 @@ html, body {
   }
 }
 
-
-/* Extra large devices (large desktops, 1200px and up) */
+/* 6d Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
@@ -649,6 +648,4 @@ html, body {
   .grid-item {
     width: 25%;
   }
-
-
 }
