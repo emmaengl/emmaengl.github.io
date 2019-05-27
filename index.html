@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,15 +19,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- START CONTENT -->
 
+<!-- START CONTENT -->
 <body>
   <div class="top-bar"></div>
-  <section class="header-section">
-    <div class="container-fluid">
+  <section class="title-section">
+    <div class="container">
 
       <!-- Logo & Title  -->
-      <div class="row align-items-center fill-80">
+      <div class="row align-items-center fill-80 pt-5">
         <div class="col fade-in">
           <img class="img-fluid mx-auto d-block ee-logo mb-5" src="images/EE-Logo.png" />
           <h1 class="xl-heading text-center">Emma Englishby</h1>
@@ -37,24 +36,24 @@
       </div>
 
       <!-- Navigation  -->
-      <div class="row align-items-end fill-20">
+      <div class="row align-items-end fill-20 pb-5">
         <div class="col">
-          <nav class="navbar navbar-expand-lg navbar-light justify-content-center mb-5">
+          <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon justify-content-center"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center align-self-end" id="navbarNav">
               <ul class="navbar-nav ">
-                <li class="nav-item active mx-2">
+                <li class="nav-item active mx-3">
                   <a class="nav-link scroll" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-3">
                   <a class="nav-link scroll" href="#about">About</a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-3">
                   <a class="nav-link scroll" href="#portfolio">Portfolio</a>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-3">
                   <a class="nav-link scroll" href="#footer">Contact</a>
                 </li>
               </ul>
@@ -65,11 +64,11 @@
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="row justify-content-md-between">
-        <div class="col-lg-8 order-2 order-lg-1">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about-section py-lg-5">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 order-2 order-md-1">
           <h3 class="color-heading">Hi, I'm Emma.</h3>
           <h5 class="my-3">I'm a freelance web designer and developer living in Berlin, and currently seeking a fulltime front end developer role.</h5>
           <p>I first got into coding over a decade ago when attempting to DIY my photography business website. It didn’t take me too long to realise that I loved the command line even more than my camera, and after brief stints in digital marketing
@@ -80,7 +79,7 @@
           </p>
         </div>
 
-        <div class="col-lg-4 order-lg-2">
+        <div class="col-md-4 col-lg-3 order-md-2">
           <img class="img-fluid mx-auto mb-5 mr-lg-0 d-block rounded-circle" src="images/Emma Grayscale.jpg" width="200" height="200" />
         </div>
       </div>
@@ -88,10 +87,13 @@
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials" class="color-section">
+  <section id="testimonials" class="testimonial-section text-center py-lg-5">
+    <div class="container py-5">
+<div class="row">
+  <div class="col">
     <i class="fas fa-quote-left testimonial-quote mb-5"></i>
     <div id="testimonial-slider" class="carousel slide" data-ride="carousel" data-interval="0">
-      <div class="carousel-inner container">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <h5>Emma has been an amazing communicator and planner with a very good eye for design and great coding skills.
             She's been flexible to accommodate our launch date changes and she delivered a top notch online store for us right on time. I would highly recommend her for your project!</h5>
@@ -131,20 +133,23 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    </div>
+  </div>
+</div>
   </section>
 
 
   <!-- Portfolio -->
-  <section id="portfolio" class="portfolio-section">
-    <div class="ee-container">
-          <h3 class="text-center mb-5">Portfolio</h3>
+  <section id="portfolio" class="portfolio-section text-center py-lg-5">
+    <div class="container py-5">
+          <h3 class="mb-4">Portfolio</h3>
       <div class="grid">
         <div class="grid-sizer"></div>
         <div class="grid-item">
           <div class="portfolio-img">
             <h2>Varidesk</h2>
             <a href="portfolio/varidesk.html">
-              <img src="images/Varidesk-01.jpg" />
+              <img src="images/Varidesk-02.jpg" />
             </a>
           </div>
         </div>
@@ -160,7 +165,7 @@
           <div class="portfolio-img">
             <h2>Terroir Talking</h2>
             <a href="portfolio/terroir-talking.html">
-              <img src="images/Terroir-Talking-01.jpg" />
+              <img src="images/Terroir-Talking-03.jpg" />
             </a>
           </div>
         </div>
@@ -184,7 +189,7 @@
           <div class="portfolio-img">
             <h2>Dublin HEMA Club</h2>
             <a href="portfolio/dublin-hema-club.html">
-              <img src="images/Dublin-HEMA-Club-01.jpg" />
+              <img src="images/Dublin-HEMA-Club-03.jpg" />
             </a>
           </div>
         </div>
@@ -192,7 +197,7 @@
           <div class="portfolio-img">
             <h2>SK Cakes</h2>
             <a href="portfolio/s-k-cakes.html">
-              <img src="images/S-K-Cakes-01.jpg" />
+              <img src="images/S-K-Cakes-04.jpg" />
             </a>
           </div>
         </div>
@@ -216,7 +221,7 @@
           <div class="portfolio-img">
             <h2>The Outpost</h2>
             <a href="portfolio/the-outpost.html">
-              <img src="images/The-Outpost-01.jpg" />
+              <img src="images/The-Outpost-02.jpg" />
             </a>
           </div>
         </div>
@@ -224,10 +229,14 @@
   </section>
 
   <!-- Skills -->
-  <section class="section color-section">
-    <h3 class="text-center mb-5">Skills</h3>
-    <div class="container">
+  <section class="skills-section py-lg-5">
+    <div class="container py-5">
       <div class="row">
+<div class="col-12">
+      <h3 class="text-center mb-5">Skills</h3>
+</div>
+</div>
+<div class="row">
         <div class="col-lg-6">
           <div class="progress">
   <div class="progress-bar progress-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span class="skill-label xs-heading">HTML (5)</span></div>
@@ -269,9 +278,10 @@
 
 
   <!-- Experience Timeline -->
-  <section id="experience">
-    <div class="ee-container">
-
+  <section id="experience" class="py-lg-5">
+    <div class="container py-5">
+<div class="row">
+  <div class="col">
           <h3 class="text-center">Experience</h3>
           <ul class="timeline">
             <li>
@@ -302,8 +312,7 @@
               <div class="timeline-section">
                 <h6 class="xs-heading">MARCH 2012 – SEPTEMBER 2012</h6>
                 <h5>Social Media Manager</h5>
-                <p>I worked with startups around the world and across a range of industries, specialising in data driven website solutions. Services included web design and development on Shopify, Squarespace and Wordpress, as well as Google
-                  Analytics and SEO consulting.</p>
+                <p>I wrote and edited articles, newsletters, and social media posts for well-known international brands including MINI and Swarovski Crystal. I also collaborated on concept work for online marketing campaigns, and was responsible for data analysis and reporting on the success of our online marketing strategies.</p>
               </div>
             </li>
             <li class="timeline-inverted">
@@ -318,17 +327,21 @@
             </li>
           </ul>
 
-      <p class="text-center">
+      <!-- <p class="text-center">
         See more on <a href="https://www.linkedin.com/in/emmaenglishby/" target="_blank">LinkedIn</a>.
-      </p>
-
+      </p> -->
+    </div>
+    </div>
     </div>
   </section>
 
 
   <!-- FOOTER -->
-  <section class="footer-section text-center" id="footer">
-    <h3 class="mb-3">Contact Me</h3>
+  <section class="footer-section text-center pt-lg-5" id="footer">
+    <div class="container pt-3 pt-lg-5 pb-3">
+      <div class="row">
+        <div class="col">
+    <h3 class="mb-4">Contact Me</h3>
     <div class="social-icons">
       <a href="mailto:emma@englishby.co" target="_blank"><i class="fas fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/emmaenglishby/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -337,6 +350,10 @@
     </div>
     <hr class="mb-3"/>
     <p class="xs-heading text-center">© 2019 &middot; Site coded by Emma Englishby with HTML, CSS, JS, Bootstrap and JQuery &middot; <a href="impressum.html">Impressum</a></p>
+  </div>
+</div>
+
+</div>
   </section>
 
 

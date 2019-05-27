@@ -2,35 +2,36 @@
 /* * * * * TABLE OF CONTENTS * * * * * */
 /* * * * * * * * * * * * * * * * * * * */
 /*
-- GLOBAL STYLES (MOBILE FIRST)
-  - Fade In Elements
+- 01. GLOBAL STYLES (MOBILE FIRST)
+  - 1a Containers & Sections
+  - 1b Screen Fills and Top Bar
+  - 1c Fade-in Elements
 
-- TYPOGRAPHY
-  - Headings
-  - Navigation & Links
+- 02. TYPOGRAPHY
+  - 2a Body Text
+  - 2b Headings
+  - 2c Navigation & Links
 
-- ICONS & IMAGES
+- 03. ICONS & IMAGES
 
-- HOMEPAGE
-  - Timeline
-  - Portfolio
+- 04. HOMEPAGE
+  - 4a Title
+  - 4b About
+  - 4c Testimonials
+  - 4d Portfolio
+  - 4e Skills
+  - 4f Experience
 
-- MEDIA BREAKPOINTS
+- 05. PROJECT PAGES
+
+- 06. MEDIA BREAKPOINTS
 */
 
-/* * * * * * * * * * * * * * * * * * * * * * * * */
-/* * * * * GLOBAL STYLES (MOBILE FIRST) * * * * */
-/* * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * 01. GLOBAL STYLES (MOBILE FIRST) * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-/* Containers & Sections */
-.section {
-  padding: 17% 7%;
-}
-
-.header-section {
-  background-color: #F2EFEA;
-}
-
+/* 1a CONTAINERS & SECTIONS */
 .footer-section {
   padding: 7% 15% 1px;
   background-color: #F2EFEA;
@@ -41,16 +42,13 @@
   color: #848889;
 }
 
-.color-section {
+.testimonial-section,
+.skills-section {
   background-color: #3cc6bd;
 }
 
-.ee-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* Screen Fills and Top Bar */
+/* 1b SCREEN FILLS & TOP BAR */
 .fill {
   height: 100vh;
 }
@@ -70,7 +68,7 @@
 }
 
 
-/* Fade In Elements */
+/* 1c FADE-IN ELEMENTS */
 .fade-in {
   opacity: 0;
   -webkit-transition: opacity 1s ease-in;
@@ -85,11 +83,11 @@
   opacity: 1;
 }
 
-/* * * * * * * * * * * * * * * */
-/* * * * * TYPOGRAPHY * * * * */
-/* * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * */
+/* * * * * 02. TYPOGRAPHY * * * * */
+/* * * * * * * * * * * * * * * * * */
 
-/* Body Text */
+/* 2a BODY TEXT */
 html, body {
   font-size: 15px;
 }
@@ -99,6 +97,8 @@ body {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
+
+p {margin: 1rem 0;}
 
 a {
   color: #242B33;
@@ -123,10 +123,11 @@ hr {
   height: 3px;
   width: 25%;
   background-color: #f75940;
+  margin: 2rem 0;
 }
 
 
-/* Headings */
+/* 2b HEADINGS */
 h1, h3 {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -164,7 +165,7 @@ h2, h4, h5, h6 {
 }
 
 
-/* Navigation */
+/* 2c NAVIGATION */
 .navbar {
   padding: 0px;
 }
@@ -201,12 +202,16 @@ h2, h4, h5, h6 {
   max-height: 70px;
 }
 
-/* * * * * * * * * * * * * * * * * */
-/* * * * * ICONS & IMAGES * * * * */
-/* * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * */
+/* * * * * 03. ICONS & IMAGES * * * * */
+/* * * * * * * * * * * * * * * * * * * */
 
 .img-full-width {
   width: 100%;
+}
+
+.img-full-height {
+  height: 100%;
 }
 
 .ee-logo {
@@ -242,25 +247,21 @@ h2, h4, h5, h6 {
   padding: 0 1px;
 }
 
-/* * * * * * * * * * * * * * */
-/* * * * * HOMEPAGE * * * * */
-/* * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * */
+/* * * * * 04. HOMEPAGE * * * * */
+/* * * * * * * * * * * * * * * * */
 
-/* About */
-#about {
+/* 4a TITLE */
+.title-section {
+  background-color: #F2EFEA;
+}
+
+/* 4b ABOUT */
+.about-section {
   text-align: center;
 }
 
-/* Testimonials */
-#testimonials {
-  text-align: center;
-  padding: 8% 0;
-}
-
-#testimonials h5 {
-  margin-bottom: 30px;
-}
-
+/* 4c TESTIMONIALS */
 .testimonial-quote {
   display: block;
   font-size: 4rem;
@@ -273,8 +274,8 @@ h2, h4, h5, h6 {
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 3%;
-  margin: 0 10px 0;
+  width: initial;
+
 }
 
 .carousel-control-prev-icon {
@@ -286,24 +287,22 @@ h2, h4, h5, h6 {
 }
 
 
-/* PORTFOLIO */
-.portfolio-section {
-  padding: 7% 0;
+/* 4d PORTFOLIO */
+.grid {
+  margin 0 -10px;
 }
-
-#portfolio img {
-  width: 100%;
-}
-
 .portfolio-img {
   background-color: #3CC6BD;
   position: relative;
   color: #FFFFFF;
   margin: 10px;
+  max-height: 300px;
+  overflow: hidden;
 }
 
 .portfolio-img img {
-  opacity: 0.03;
+  opacity: 0;
+  width: 100%;
 }
 
 .portfolio-img:hover img {
@@ -315,10 +314,6 @@ h2, h4, h5, h6 {
   padding-bottom: 0;
 }
 
-.portfolio-img h2 {
-  text-align: center;
-}
-
 .portfolio-img:hover h2 {
   display: block;
 }
@@ -328,6 +323,8 @@ h2, h4, h5, h6 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background-color: #3CC6BD;
+  padding: 10px;
 }
 
 .grid-sizer,
@@ -336,7 +333,7 @@ h2, h4, h5, h6 {
 }
 
 
-/* SKILLS */
+/* 4e SKILLS */
 .progress {
   margin-bottom: 10px;
   background-color: #F2EFEA;
@@ -374,15 +371,7 @@ h2, h4, h5, h6 {
 }
 
 
-/* EXPERIENCE */
-#experience {
-  margin: 7% 0;
-}
-
-#experience .ee-container {
-  padding: 0 10px;
-}
-
+/* 4f EXPERIENCE */
 .timeline {
   margin-top: 30px;
   list-style: none;
@@ -510,10 +499,16 @@ h2, h4, h5, h6 {
 }
 
 
+/* * * * * * * * * * * * * * * * * * */
+/* * * * * 05. PROJECT PAGES * * * * */
+/* * * * * * * * * * * * * * * * * * */
+.project-description {
+  max-height: initial;
+}
 
-/* * * * * * * * * * * * * * * * * * */
-/* * * * * MEDIA BREAKPOINTS * * * * */
-/* * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * */
+/* * * * * 06. MEDIA BREAKPOINTS * * * * */
+/* * * * * * * * * * * * * * * * * * * * */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -534,9 +529,7 @@ h2, h4, h5, h6 {
     height: 150px;
   }
 
-  .carousel-control-next, .carousel-control-prev {
-    width: 3%;
-  }
+
 
   .carousel-inner {
     padding: 0;
@@ -551,9 +544,7 @@ h2, h4, h5, h6 {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+
 
   html, body {
     font-size: 16px;
@@ -563,40 +554,16 @@ h2, h4, h5, h6 {
       padding: 10% 10%;
   }
 
-  .carousel-inner {
-    padding: 0 10%;
-  }
-
-  .grid-sizer,
-  .grid-item {
-    width: 33.3333333333333333%;
-  }
-}
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-.container {
-  max-width: 900px;
-}
-
-html, body {
-  font-size: 17px;
-}
-
-.navbar-expand-lg .navbar-nav :last-child {
-  padding-right: 0;
-}
-  #about {
+  .about-section {
     text-align: left;
   }
 
   .carousel-inner {
-    padding: 0 80px;
+    padding: 0 10%;
   }
 
-  .carousel-control-next, .carousel-control-prev {
-    width: 7%;
+  .portfolio-img {
+    max-height: initial;
   }
 
   .portfolio-img img {
@@ -609,7 +576,33 @@ html, body {
 
   .grid-sizer,
   .grid-item {
-    width: 25%;
+    width: 50%;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+html, body {
+  font-size: 17px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+  .carousel-inner {
+    padding: 0 80px;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    width: 33.3333333333333333%;
   }
 
   .timeline:before {
@@ -639,16 +632,23 @@ html, body {
     border-right: 0 solid #fff;
     left: initial;
   }
+
+  .project-description {
+    max-height: 350px;
+  }
 }
 
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .section {
-    padding: 8% 15%;
+  .container {
+    max-width: 1200px;
   }
 
-  .carousel-control-next, .carousel-control-prev {
-    width: 20%;
+  .grid-sizer,
+  .grid-item {
+    width: 25%;
   }
+
+
 }
