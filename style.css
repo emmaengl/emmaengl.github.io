@@ -128,10 +128,6 @@ hr {
 }
 
 /* 2b HEADINGS */
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin: 1rem 0 0.5rem;
-}
-
 h1, h3 {
   font-family: Montserrat, Helvetica, Arial, sans-serif;
   font-weight: 900;
@@ -147,7 +143,7 @@ h3 {
   font-size: 2.1rem;
 }
 
-h2, h4, h5 {
+h2, h4, h5, h6 {
   font-family: "Source Code Pro", Courier, monospace;
   font-weight: 400;
 }
@@ -156,27 +152,21 @@ h5 {
   font-size: 1.2rem;
 }
 
-h6 {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .xl-heading {
   font-size: 3rem;
 }
 
 .sm-heading {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
-
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .xs-heading {
   color: #B2B9BA;
   font-size: 0.7rem;
-
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -570,6 +560,10 @@ a.portfolio-img {
 }
 /* 6b Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  
   .fill-80 {
     min-height: 80vh;
   }
@@ -646,10 +640,6 @@ a.portfolio-img {
 @media (min-width: 768px) {
   html, body {
     font-size: 17px;
-  }
-
-  .container {
-    max-width: 100%;
   }
 
   .navbar-light .navbar-nav .active>.nav-link,
