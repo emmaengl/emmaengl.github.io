@@ -34,8 +34,12 @@
 /* * * * * 01. GLOBAL STYLES (MOBILE FIRST) * * * * */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* 1a CONTAINERS & SECTIONS */
+.container {
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
+}
+
 .footer-section {
-  padding: 7% 15% 1px;
   background-color: #F2EFEA;
 }
 
@@ -44,10 +48,7 @@
   color: #848889;
 }
 
-.testimonial-section,
-.skills-section {
-  background-color: #3cc6bd;
-}
+
 
 /* 1b SCREEN FILLS & TOP BAR */
 .fill {
@@ -55,11 +56,11 @@
 }
 
 .fill-80 {
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .fill-20 {
-  min-height: 19vh;
+  min-height: 28vh;
 }
 
 .top-bar {
@@ -149,8 +150,12 @@ h2, h4, h5, h6 {
   line-height: 135%;
 }
 
+h5 {
+  font-size: 1.2rem;
+}
+
 .xl-heading {
-  font-size: 3.6rem;
+  font-size: 3rem;
 }
 
 .xs-heading {
@@ -207,7 +212,7 @@ h2, h4, h5, h6 {
 }
 
 .navbar-brand img {
-  max-height: 70px;
+  max-height: 55px;
 }
 
 .navbar-light .navbar-toggler {
@@ -227,12 +232,12 @@ h2, h4, h5, h6 {
 }
 
 .ee-logo {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .social-icons {
-  margin: 1rem 0 6rem;
+  margin: 1rem 0 4rem;
 }
 
 .social-icons .fab,
@@ -244,7 +249,8 @@ h2, h4, h5, h6 {
   margin: 0 0.5rem;
 }
 
-.social-icons a, #testimonials a {
+.social-icons a,
+.testimonial-section a {
   padding-bottom: 0;
   border-bottom: 0;
 }
@@ -274,6 +280,16 @@ h2, h4, h5, h6 {
 }
 
 /* 4c TESTIMONIALS */
+.testimonial-section,
+.skills-section {
+  background-color: #3cc6bd;
+}
+
+.testimonial-section .container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .testimonial-quote {
   display: block;
   font-size: 4rem;
@@ -307,14 +323,6 @@ h2, h4, h5, h6 {
   width: 100%;
 }
 
-.portfolio-img {
-  background-color: #3CC6BD;
-  position: relative;
-  margin: 10px;
-  max-height: 300px;
-  overflow: hidden;
-}
-
 a.portfolio-img {
   border-bottom: none;
   padding-bottom: 0;
@@ -322,32 +330,12 @@ a.portfolio-img {
   color: #FFFFFF;
 }
 
-.portfolio-img:hover h2 {
-  display: block;
-}
-
-.portfolio-img img {
-  opacity: 1;
-  width: 100%;
-}
-
-.ee-portfolio-img-square img {
+.portfolio-img {
+  background-color: #3CC6BD;
   position: relative;
-  transform: translateY(-15%);
-}
-
-.ee-portfolio-img-vertical img {
-  position: relative;
-  transform: translateY(-30%);
-}
-
-.ee-portfolio-img-vertical-offset img {
-  position: relative;
-  transform: translateY(-50%);
-}
-
-.portfolio-img:hover img {
-  opacity: 0;
+  margin: 10px;
+  max-height: 300px;
+  overflow: hidden;
 }
 
 .portfolio-img h2 {
@@ -359,6 +347,25 @@ a.portfolio-img {
   transform: translate(-50%, -50%);
   width: 66%;
   z-index: 100;
+}
+
+.portfolio-img:hover h2 {
+  display: block;
+}
+
+.portfolio-img img {
+  opacity: 1;
+  width: 100%;
+}
+
+.portfolio-img:hover img {
+  opacity: 0;
+}
+
+.ee-portfolio-img-vertical img,
+.ee-portfolio-img-vertical-offset img {
+  position: relative;
+  transform: translateY(-20%);
 }
 
 /* 4e SKILLS */
@@ -535,9 +542,29 @@ a.portfolio-img {
 /* * * * * * * * * * * * * * * * * * * * */
 /* 6a Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .fill-80 {
+    min-height: 80vh;
+  }
+
+  .fill-20 {
+    min-height: 19vh;
+  }
+
+  .xl-heading {
+    font-size: 3.6rem;
+  }
+
+  .navbar-brand img {
+    max-height: 70px;
+  }
+
   .ee-logo {
     width: 150px;
     height: 150px;
+  }
+
+  .social-icons {
+    margin: 1rem 0 6rem;
   }
 
   .carousel-inner {
@@ -560,6 +587,21 @@ a.portfolio-img {
   .portfolio-img h2 {
     background-color: initial;
     width: initial;
+  }
+
+  .ee-portfolio-img-square img {
+    position: relative;
+    transform: translateY(-15%);
+  }
+
+  .ee-portfolio-img-vertical img {
+    position: relative;
+    transform: translateY(-30%);
+  }
+
+  .ee-portfolio-img-vertical-offset img {
+    position: relative;
+    transform: translateY(-50%);
   }
 
   .ee-portfolio-img-vertical img,
