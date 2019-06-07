@@ -402,8 +402,16 @@ a.portfolio-img {
   width: 65%;
 }
 
+.progress-55 {
+  width: 55%;
+}
+
 .progress-45 {
   width: 45%;
+}
+
+.progress-35 {
+  width: 35%;
 }
 
 .skill-label {

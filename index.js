@@ -7,6 +7,7 @@
 
 $(document).ready(function(){
     $('.fade-in').addClass('load');
+
     $('a[href^="#"].scroll').on('click',function (e) {
         e.preventDefault();
 
@@ -19,12 +20,17 @@ $(document).ready(function(){
             window.location.hash = target;
         });
     });
-});
+
+    $('.grid').imagesLoaded( function() {
+      // images have loaded
+      // init Masonry
+      var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
 
 
-$('.grid').masonry({
-  // options
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
+
+    });
 });
